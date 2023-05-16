@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Contact Form</title>
+	<style>
+
+.main {
+      display: flex;
+      justify-content: center;
+      margin: 25px;
+    }
+    body {
+      background-image: url("./944027.png");
+      background-repeat: no-repeat;
+      font-family: 'Dongle', sans-serif;
+    }
+
+    .navigationWrapper {
+      padding: 20px;
+      background-image: url("https://wallpaperaccess.com/full/937722.jpg");
+      background-repeat: repeat-x;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      font-size: 30px;
+      text-transform: uppercase;
+      width: auto;
+      margin: 10px;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .part1 {
+      border: 1px solid black;
+      color: black;
+      background-image: url("./Contact\ img.jpg");
+      width: 1000px;
+      height: 1000px;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      justify-content: center;
+    }
+
+    .part1 .placeholder {
+      color: #000;
+    }
+    .box {
+      display: flex;
+      flex-direction: column;
+    }
+
+    form {
+      /* display: inline; */
+      color: rgb(1, 1, 1);
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+            color: white;
+		}
+
+		input[type="text"], textarea {
+			width: 100%;
+			padding: 8px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			margin-bottom: 20px;
+		}
+
+		input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #555;
+		}
+
+    .input {
+ background-color: #383838;
+ border: 1ex solid none;
+ border-top-width: 1.7em;
+ margin: 0;
+ padding: 0;
+ color: #383838;
+ word-wrap: break-word;
+ outline: 7px solid #383838;
+ height: 30px;
+ font-size: 17px;
+ text-align: center;
+ transition: all 1s;
+ max-width: 190px;
+ font-weight: bold;
+ font-family: 'Courier New', Courier, monospace;
+}
+
+.input:hover {
+ border-top-width: 0.2em;
+ background-color: #f1e8e8;
+}
+
+.input:focus {
+ border-top-width: 0.2em;
+ background-color: #f1e8e8;
+}
+
+button {
+  font-family: inherit;
+  font-size: 20px;
+  background: royalblue;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+  transform: translateX(5em);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+
+
+	</style>
+</head>
+<body>
+  <nav class="navigationWrapper">
+    <h1 class="head" style="color: black;">Contact Form</h1>
+  </nav>
+  <div class="main">
+    <div class="part1">
+	<form>
+		
+<input type="text" name="text" class="input" placeholder="Name">
+
+<input type="text" name="text" class="input" placeholder="Email">
+
+<input type="text" name="text" class="input" placeholder="Enter Your Message">
+
+<button>
+  <div class="svg-wrapper-1">
+    <div class="svg-wrapper">
+      <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+  <span>Send</span>
+</button>
+    </div>
+    </div>
+	</form>
+</body>
+</html>
